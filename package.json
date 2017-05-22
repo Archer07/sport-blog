@@ -6,6 +6,9 @@
   "author": "Ayoub Nejjari <raysoflee07@gmail.com>",
   "license": "MIT",
   "main": "bin/www",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
   "dependencies": {
     "body-parser": "^1.17.2",
     "connect-flash": "^0.1.1",
