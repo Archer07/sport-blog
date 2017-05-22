@@ -4,5 +4,10 @@
   "description": "A simple sport blog build with node/express and backed by MongoDB",
   "main": "app.js",
   "author": "Ayoub Nejjari <raysoflee07@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3",
+    "mongodb": "^2.2.27",
+    "mongoose": "^4.10.1"
+  }
 }
