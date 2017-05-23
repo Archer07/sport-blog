@@ -3,16 +3,7 @@ extends layout
 block content
       include ./components/navbar.pug
           // /.container
-      // Page Header
-      // Set your background image for this header on the line below.
-      header.intro-header(style="background-image: url('/images/home-bg.jpg')")
-          .container
-              .row
-                  .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
-                      .site-heading
-                          h1 Clean Blog
-                          hr.small
-                          span.subheading A Clean Blog Theme by Start Bootstrap
+      include ./components/header.pug
       // Main Content
       .container
           .row
@@ -63,26 +54,5 @@ block content
                   ul.pager
                       li.next
                           a(href="#") Older Posts →
-      hr
-      // Footer
-      footer
-          .container
-              .row
-                  .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
-                      ul.list-inline.text-center
-                          li
-                              a(href="#")
-                                  span.fa-stack.fa-lg
-                                      i.fa.fa-circle.fa-stack-2x
-                                      i.fa.fa-twitter.fa-stack-1x.fa-inverse
-                          li
-                              a(href="#")
-                                  span.fa-stack.fa-lg
-                                      i.fa.fa-circle.fa-stack-2x
-                                      i.fa.fa-facebook.fa-stack-1x.fa-inverse
-                          li
-                              a(href="#")
-                                  span.fa-stack.fa-lg
-                                      i.fa.fa-circle.fa-stack-2x
-                                      i.fa.fa-github.fa-stack-1x.fa-inverse
-                      p.copyright.text-muted Copyright © Your Website 2016
+                          
+      include ./components/footer.pug
