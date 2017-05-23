@@ -10,14 +10,16 @@ var session = require('express-session');
 
 var mongoose = require('mongoose');
 
-// mongoose.connect('mongodb://localhost/sportBlog');
-//
-// var db = mongoose.connection;
+mongoose.connect('mongodb://localhost/sportBlog');
+
+var db = mongoose.connection;
 
 var index = require('./routes/index');
-var users = require('./routes/users');
 var about = require('./routes/about');
 var contact = require('./routes/contact');
+var manage = require('./routes/manage');
+var articles = require('./routes/articles');
+var categories = require('./routes/categories');
 
 var app = express();
 
@@ -64,9 +66,12 @@ app.use(function (req, res, next) {
 });
 
 app.use('/', index);
-app.use('/users', users);
 app.use('/about', about);
 app.use('/contact', contact);
+app.use('/manage', manage);
+app.use('/articles', articles);
+app.use('/categories', categories);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

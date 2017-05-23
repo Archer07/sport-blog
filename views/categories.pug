@@ -1,0 +1,12 @@
+extends layout
+
+block content
+      // /.container
+      include ./components/header.pug
+      // Main Content
+      .container
+          .row
+            .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+              each category in cats
+                a(href='/'+ category.name)
+                  h4 #{category.name}
