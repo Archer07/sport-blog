@@ -8,5 +8,5 @@ block content
           .row
             .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
               each category in cats
-                a(href='/'+ category.name)
-                  h4 #{category.name}
+                a(href='/categories/'+ category._id)
+                  h4 #{category._id}
